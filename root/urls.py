@@ -6,7 +6,8 @@ from root.settings import MEDIA_URL, MEDIA_ROOT, STATIC_URL, STATIC_ROOT, DEBUG
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.urls')),
-    path('edu/', include('edu.urls'))
+    path('edu/', include('edu.urls')),
+    path('panel/', include('panel.urls'))
 ]
 
 if DEBUG:

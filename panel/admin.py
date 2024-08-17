@@ -1,3 +1,4 @@
 from django.contrib import admin
+from panel.models import Homework
 
-# Register your models here.
+admin.site.register(Homework)

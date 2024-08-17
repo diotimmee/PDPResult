@@ -246,66 +246,14 @@
                 </tr>
                 </thead>
                 <tbody>
+                {% for home in homeworks %}
                 <tr>
-                    <td>IT</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
+                    <td>{{ home.since }}</td>
+                    <td>{{ home.date }}</td>
+                    <td>{{ home.homework }}</td>
+                    <td><a class="btn btn-sm btn-primary" href="">{{ home.status }}</a></td>
                 </tr>
-                <tr>
-                    <td>INGILIZ TILI</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
-                </tr>
-                <tr>
-                    <td>ONA-TILI</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
-                </tr>
-                <tr>
-                    <td>MATEMATIKA</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
-                </tr>
-                <tr>
-                    <td>TARBIYA</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
-                </tr>
-                <tr>
-                    <td>IT</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
-                </tr>
-                <tr>
-                    <td>INGILIZ TILI</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
-                </tr>
-                <tr>
-                    <td>ONA-TILI</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
-                </tr>
-                <tr>
-                    <td>MATEMATIKA</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
-                </tr>
-                <tr>
-                    <td>TARBIYA</td>
-                    <td>INV-0123</td>
-                    <td>Jhon Doe</td>
-                    <td><a class="btn btn-sm btn-primary" href="">Bajarilmagan</a></td>
-                </tr>
+                {% endfor %}
                 </tbody>
             </table>
         </div>
