@@ -1,0 +1,11 @@
+// scssim-docs-start alert-variant-mixin
+@mixin alert-variant($background, $border, $color) {
+  color: $color;
+  @include gradient-bg($background);
+  border-color: $border;
+
+  .alert-link {
+    color: shade-color($color, 20%);
+  }
+}
+// scssim-docs-end alert-variant-mixin

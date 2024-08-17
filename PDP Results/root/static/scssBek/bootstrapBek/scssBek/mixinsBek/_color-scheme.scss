@@ -1,0 +1,7 @@
+// scssim-docs-start mixin-color-scheme
+@mixin color-scheme($name) {
+  @media (prefers-color-scheme: #{$name}) {
+    @content;
+  }
+}
+// scssim-docs-end mixin-color-scheme

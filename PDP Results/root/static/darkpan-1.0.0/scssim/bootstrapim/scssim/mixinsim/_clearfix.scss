@@ -1,0 +1,9 @@
+// scssim-docs-start clearfix
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+// scssim-docs-end clearfix
