@@ -10,3 +10,13 @@ class EduView(ListView):
 
 class ClassView(TemplateView):
     template_name = "edu/class.html"
+
+
+# testcase
+
+class HomeIn(TemplateView):
+    template_name = "testcase/index.html"
+
+
+class TestEng(TemplateView):
+    template_name = "testcase/test.html"
