@@ -9,4 +9,4 @@ class EduView(ListView):
 
 
 class ClassView(TemplateView):
-    template_name = "edu/Sinflar.html"
+    template_name = "edu/class.html"
