@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.views.generic import ListView
+from panel.models import Homework
 
-# Create your views here.
+
+class HomeWorkView(ListView):
+    model = Homework
+    context_object_name = "homeworks"
+    template_name = "studentspanel/index.html"
