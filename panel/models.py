@@ -9,7 +9,7 @@ class Homework(models.Model):
         ('FRONTEND', 'frontend'),
         ('ROBOTEXNIKA', 'robotexnika'),
         ('FIZIKA', 'fizika'),
-        ('MATEMATIKA', 'matimateka'),
+        ('MATEMATIKA', 'matemateka'),
         ('INGILIZ TILI', 'ingiliz tili'),
         ('RUS TILI', 'rus tili'),
         ('STA', 'sta'),
@@ -19,9 +19,8 @@ class Homework(models.Model):
         ('TARIX', 'tarix'),
         ('BiOLOGIYA', 'biologiya'),
         ('GEOMETRIYA', 'geometriya'),
-        ('GEOGRAFIYA', 'geografiya'),
+        ('GEOGRAFIYA', 'geografiya'), ]
 
-    ]
     date = models.DateTimeField()
     homework = models.CharField(max_length=255, blank=True, null=True)
     since = models.CharField(max_length=20, choices=SINCE_CHOICES)
@@ -34,3 +33,13 @@ class Homework(models.Model):
         verbose_name = 'Homework'
         verbose_name_plural = 'HomeWork'
         db_table = 'homework'
+
+
+class Contact(models.Model):
+    name = models.CharField(max_length=255, blank=True, null=True)
+    phone = models.CharField(max_length=20, blank=True, null=True)
+    email = models.EmailField()
+    message = models.TextField()
+
+    def __str__(self):
+        return self.name

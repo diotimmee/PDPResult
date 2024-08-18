@@ -71,7 +71,7 @@
             O'quvchilar</a>
         <a href="DarsJadvali.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i> Dars Jadvali</a>
         <a href="Natijalarim.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Natijalarim</a>
-        <a href="Takliflar.html" class="nav-link dropdown-toggle"><i class="far fa-file-alt me-2"></i>Takliflar</a>
+        <a href="contact.html" class="nav-link dropdown-toggle"><i class="far fa-file-alt me-2"></i>Takliflar</a>
         <div class="dropdown-menu bg-transparent border-0">
         </div>
     </div>
@@ -251,7 +251,7 @@
                     <td>{{ home.since }}</td>
                     <td>{{ home.date }}</td>
                     <td>{{ home.homework }}</td>
-                    <td><a class="btn btn-sm btn-primary" href="">{{ home.status }}</a></td>
+                    <td><a id="statusBtn" class="btn btn-sm btn-danger" href="#" onclick="toggleStatus()">{{ home.status }}</a></td>
                 </tr>
                 {% endfor %}
                 </tbody>
@@ -260,7 +260,19 @@
     </div>
 </div>
 <!-- Recent Sales End -->
+<script>
+    function toggleStatus() {
+        var statusBtn = document.getElementById("statusBtn");
 
+        // Agar hozirgi holat "Bajarilmagan" bo'lsa
+        if (statusBtn.innerText === "Bajarilmagan") {
+            statusBtn.classList.remove("btn-danger"); // Qizil rangni olib tashlash
+            statusBtn.classList.add("btn-success");   // Yashil rangni qo'shish
+            statusBtn.innerText = "Bajarilgan";       // Matnni o'zgartirish
+        }
+    }
+
+</script>
 
 <!-- Widgets Start -->
 <div class="container-fluid pt-4 px-4">
