@@ -15,3 +15,5 @@ class Lesson(models.Model):
         verbose_name = 'Lesson'
         verbose_name_plural = 'Lesson'
         db_table = 'lesson'
+
+
