@@ -11,6 +11,9 @@ class ProfileView(TemplateView):
     template_name = "EditProfile.html"
 
 
+
+
+
 class HomeWorkView(ListView):
     model = Homework
     context_object_name = "homeworks"
