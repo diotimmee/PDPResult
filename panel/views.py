@@ -4,7 +4,11 @@ from panel.models import Homework, Contact
 from panel.forms import SignupForm, LoginForm
 from django.views.generic.edit import FormView
 from django.contrib.auth import authenticate, login
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, CreateView, TemplateView
+
+
+class ProfileView(TemplateView):
+    template_name = "EditProfile.html"
 
 
 class HomeWorkView(ListView):
