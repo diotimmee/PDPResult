@@ -1,16 +1,19 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
+from apps.models import About
 
 
 class HomeView(TemplateView):
     template_name = "Asosiy/index.html"
 
 
-class AboutView(TemplateView):
+class AboutView(ListView):
+    model = About
+    context_object_name = "posts"
     template_name = "Haqidalar/Haqida.html"
 
 
 class TestView(TemplateView):
-    template_name = "Asosiy/TestTurlari/index.html"
+    template_name = "Asosiy/indexs.html"
 
 
 class TestOneView(TemplateView):
