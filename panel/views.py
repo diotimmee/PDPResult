@@ -1,6 +1,6 @@
 from panel.forms import ContactForm
 from django.urls import reverse_lazy
-from panel.models import Homework, Contact
+from panel.models import Homework, Contact, Pre, Intermediate, Beginner, Elementary
 from panel.forms import SignupForm, LoginForm
 from django.views.generic.edit import FormView
 from django.contrib.auth import authenticate, login
@@ -9,9 +9,6 @@ from django.views.generic import ListView, CreateView, TemplateView
 
 class ProfileView(TemplateView):
     template_name = "EditProfile.html"
-
-
-
 
 
 class HomeWorkView(ListView):
@@ -52,3 +49,30 @@ class LoginViews(FormView):
         else:
             form.add_error(None, 'Invalid username or password')
             return self.form_invalid(form)
+
+
+class BeginnerView(ListView):
+    model = Beginner
+    context_object_name = "beginners"
+    template_name = "OnlineDarslar/begginer.html"
+
+
+class IntermediateView(ListView):
+    model = Intermediate
+    context_object_name = "inters"
+
+    template_name = "OnlineDarslar/intermediate.html"
+
+
+class ElementaryView(ListView):
+    model = Elementary
+    context_object_name = "elements"
+
+    template_name = "OnlineDarslar/elementary.html"
+
+
+class Pre_intermediateView(ListView):
+    model = Pre
+    context_object_name = "pres"
+
+    template_name = "OnlineDarslar/preintermediate.html"

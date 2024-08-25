@@ -43,3 +43,42 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Pre(models.Model):
+    num = models.CharField(max_length=2, blank=True, null=True)
+    title = models.CharField(max_length=30, blank=True, null=True)
+    topic = models.CharField(max_length=50, blank=True, null=True)
+    date = models.CharField(max_length=50, blank=True, null=True)
+    images = models.ImageField(upload_to="en")
+    dic = models.TextField()
+
+
+class Beginner(models.Model):
+    num = models.CharField(max_length=2, blank=True, null=True)
+    title = models.CharField(max_length=30, blank=True, null=True)
+    topic = models.CharField(max_length=50, blank=True, null=True)
+    date = models.CharField(max_length=50, blank=True, null=True)
+    links = models.URLField()
+    images = models.ImageField(upload_to="en")
+    dic = models.TextField()
+
+
+class Intermediate(models.Model):
+    num = models.CharField(max_length=2, blank=True, null=True)
+    title = models.CharField(max_length=30, blank=True, null=True)
+    topic = models.CharField(max_length=50, blank=True, null=True)
+    date = models.CharField(max_length=50, blank=True, null=True)
+    links = models.URLField()
+    images = models.ImageField(upload_to="en")
+    dic = models.TextField()
+
+
+class Elementary(models.Model):
+    num = models.CharField(max_length=2, blank=True, null=True)
+    title = models.CharField(max_length=30, blank=True, null=True)
+    topic = models.CharField(max_length=50, blank=True, null=True)
+    date = models.CharField(max_length=50, blank=True, null=True)
+    links = models.URLField()
+    images = models.ImageField(upload_to="en")
+    dic = models.TextField()
