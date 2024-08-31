@@ -6,7 +6,7 @@ urlpatterns = [
     path('about', AboutView.as_view(), name='about'),
     path('tests', TestView.as_view(), name='test'),
     path('testone', TestOneView.as_view(), name='testone'),
-    path('test_tow', TestTowView.as_view(), name='test_tow'),
+    path('test_two', TestTowView.as_view(), name='test_tow'),
     path('test_there', TestThereView.as_view(), name='test_there'),
 
 ]

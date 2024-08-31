@@ -1,0 +1,26 @@
+### WEB Home page
+http://localhost:8000
+http://localhost:8000/about
+http://localhost:8000/tests
+http://localhost:8000/testone
+http://localhost:8000/test_two
+http://localhost:8000/test_there
+
+
+### Web Edu
+http://localhost:8000/edu
+http://localhost:8000/edu/class
+http://localhost:8000/edu/home
+http://localhost:8000/edu/test
+
+
+### Web Panel
+http://localhost:8000/panel
+http://localhost:8000/panel/contact
+http://localhost:8000/panel/register
+http://localhost:8000/panel/login
+http://localhost:8000/panel/profileview
+http://localhost:8000/panel/beginner
+http://localhost:8000/panel/intermediate
+http://localhost:8000/panel/elementary
+http://localhost:8000/panel/pre
