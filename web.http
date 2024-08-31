@@ -7,19 +7,19 @@ http://localhost:8000/test_two
 http://localhost:8000/test_there
 
 
-### Web Edu
+### Web Education page
 http://localhost:8000/edu
 http://localhost:8000/edu/class
 http://localhost:8000/edu/home
 http://localhost:8000/edu/test
 
 
-### Web Panel
+### Web Panel page
 http://localhost:8000/panel
 http://localhost:8000/panel/contact
 http://localhost:8000/panel/register
 http://localhost:8000/panel/login
-http://localhost:8000/panel/profileview
+http://localhost:8000/panel/profileview  ## in progres
 http://localhost:8000/panel/beginner
 http://localhost:8000/panel/intermediate
 http://localhost:8000/panel/elementary
